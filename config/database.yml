@@ -28,8 +28,14 @@ development:
 # re-generated from your development database when you run "rake".
 # Do not set this db to the same as development or production.
 test:
-    <<: *default
-    database: db/test.sqlite3
+    adapter: postgresql
+    encoding: utf-8
+    database: meusboletos
+    host: mybills.czxc0m4hmvl2.us-east-2.rds.amazonaws.com
+    port: 5432
+    username: meusboletos
+    password: meusboletos
+    schema_search_path: 'tutorial'
 
 production:
     adapter: postgresql
@@ -39,4 +45,4 @@ production:
     port: 5432
     username: meusboletos
     password: meusboletos
-    schema_search_path: 'tutorial_prod'
+    schema_search_path: 'boletos'
