@@ -34,4 +34,4 @@ production:
     port: 5432
     username: meusboletos
     password: meusboletos
-    schema_search_path: 'tutorial'
+    schema_search_path: 'tutorial-prod'
