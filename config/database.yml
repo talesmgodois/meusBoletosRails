@@ -45,4 +45,3 @@ production:
     port: 5432
     username: meusboletos
     password: meusboletos
-    schema_search_path: 'boletos'
