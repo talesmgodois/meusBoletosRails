@@ -49,7 +49,7 @@ group :test do
   gem 'webdrivers'
 end
 
-group :development, :production do
+group :development, :test, :production do
   gem 'pg'
 end
 
