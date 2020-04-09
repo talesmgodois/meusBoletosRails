@@ -27,4 +27,11 @@ test:
     database: db/test.sqlite3
 
 production:
-    <<: *development
+    adapter: postgresql
+    encoding: utf-8
+    database: meusboletos
+    host: mybills.czxc0m4hmvl2.us-east-2.rds.amazonaws.com
+    port: 5432
+    username: meusboletos
+    password: meusboletos
+    schema_search_path: 'tutorial'
