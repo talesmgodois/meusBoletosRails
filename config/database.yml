@@ -5,9 +5,14 @@
 #   gem 'sqlite3'
 #
 default: &default
-    adapter: sqlite3
-    pool: <%= ENV.fetch("RAILS_MAX_THREADS") { 5 } %>
-    timeout: 5000
+    adapter: postgresql
+    encoding: utf-8
+    database: meusboletos
+    host: mybills.czxc0m4hmvl2.us-east-2.rds.amazonaws.com
+    port: 5432
+    username: meusboletos
+    password: meusboletos
+    schema_search_path: 'tutorial_prod'
 
 development:
     adapter: postgresql
@@ -34,4 +39,4 @@ production:
     port: 5432
     username: meusboletos
     password: meusboletos
-    schema_search_path: 'tutorialProd'
+    schema_search_path: 'tutorial_prod'
